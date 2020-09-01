@@ -1,2 +1,32 @@
 ﻿  main.cpp
+C:\Projects\Logo\Logo\Logo\main.cpp(14,32): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=int
+          ]
+C:\Projects\Logo\Logo\Logo\main.cpp(14,25): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=int
+          ]
+C:\Projects\Logo\Logo\Logo\main.cpp(25,34): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=int
+          ]
+C:\Projects\Logo\Logo\Logo\main.cpp(25,27): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=int
+          ]
+C:\Projects\Logo\Logo\Logo\main.cpp(77,38): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=int
+          ]
+C:\Projects\Logo\Logo\Logo\main.cpp(77,31): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=int
+          ]
   Logo.vcxproj -> C:\Projects\Logo\Logo\x64\Debug\Logo.exe

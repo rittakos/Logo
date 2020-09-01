@@ -1,22 +1,31 @@
 #include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include<thread>
 
 #include "double.h"
 
-void update(int& t, sf::RenderWindow& window)
+void write(std::string str, sf::RenderWindow& window, sf::Vector2i pos)
 {
-    std::cout << "update" << std::endl;
     sf::Font font;
     if (!font.loadFromFile("C:\\Projects\\Logo\\Logo\\arial.ttf"))
         return;
-    sf::Text text(std::to_string(t), font, 50);
-    //window.draw(text);
-    //window.display();
+    sf::Text text(str, font, 50);
+    text.setPosition(pos.x, pos.y);
+    window.draw(text);
 }
+
 
 int main()
 {
+    sf::Vector2i pos(0, 0);
+
+    sf::CircleShape circle(50);
+    circle.setFillColor(sf::Color::Magenta);
+    circle.setPosition(pos.x, pos.y);
+    
+
+
     //std::cout << (Double(1) == Double(1)) << std::endl;
 
     sf::Clock clock;
@@ -52,26 +61,30 @@ int main()
             // Close window: exit
             if (event.type == sf::Event::Closed)
                 window.close();
+            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
+                pos.y -= 5;
+            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+                pos.y += 5;
+            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+                pos.x -= 5;
+            else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+                pos.x += 5;
         }
         // Clear screen
         window.clear();
         // Draw the sprite
         window.draw(sprite);
-        // Draw the string
-        window.draw(sf::Text(std::to_string(t), font, 50));
+        circle.setPosition(pos.x, pos.y);
+        window.draw(circle);
+        // Draw the strin
         // Update the window
-        window.display();
         //std::cout << "while" << std::endl;
         sf::Time elapsed = clock.getElapsedTime();
         //std::cout << Double(elapsed.asSeconds()) << std::endl;
-        if (Double(elapsed.asSeconds()) == Double(1))
-        {
-            std::cout << "elapsed" << std::endl;
-
-            clock.restart();
-            update(t, window);
-            ++t;
-        }
+        write(std::to_string(clock.getElapsedTime().asSeconds()), window, sf::Vector2i(0, 0));
+        //write(std::to_string(t), window, sf::Vector2i(100, 100));
+        window.display();
     }
+
     return EXIT_SUCCESS;;
 }
