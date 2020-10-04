@@ -150,12 +150,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="generic_type.cpp" />
+    <ClCompile Include="lexer.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="token.cpp" />
+    <ClCompile Include="tokentype.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="compiler.h" />
     <ClInclude Include="double.h" />
+    <ClInclude Include="drawable.h" />
+    <ClInclude Include="Lexer.h" />
+    <ClInclude Include="logo.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="paper.h" />
+    <ClInclude Include="Token.h" />
+    <ClInclude Include="turtle.h" />
+    <ClInclude Include="window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

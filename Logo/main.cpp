@@ -1,9 +1,26 @@
-#include <SFML/Audio.hpp>
-#include <SFML/Graphics.hpp>
+
 #include <iostream>
 #include<thread>
 
-#include "double.h"
+#include "logo.h"
+#include "lexer.h"
+
+
+int main()
+{
+    //Logo logo;
+    Lexer lexer;
+
+    std::string command = "sdfdsf true 234234234.3434 (dfdgsg g4454; )";
+    std::cout << command << std::endl << std::endl;
+
+
+    lexer.tokenise(command);
+
+    lexer.write();
+    return 0;
+    //return logo.run();
+}
 
 void write(std::string str, sf::RenderWindow& window, sf::Vector2i pos)
 {
@@ -16,7 +33,10 @@ void write(std::string str, sf::RenderWindow& window, sf::Vector2i pos)
 }
 
 
-int main()
+
+
+
+int main2()
 {
     sf::Vector2i pos(0, 0);
 
@@ -86,5 +106,5 @@ int main()
         window.display();
     }
 
-    return EXIT_SUCCESS;;
+    return EXIT_SUCCESS;
 }

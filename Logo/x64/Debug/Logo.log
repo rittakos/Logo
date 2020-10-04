@@ -1,32 +1,36 @@
-﻿  main.cpp
-C:\Projects\Logo\Logo\Logo\main.cpp(14,32): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+﻿  lexer.cpp
+  main.cpp
+C:\Projects\Logo\Logo\Logo\main.cpp(31,32): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=int
           ]
-C:\Projects\Logo\Logo\Logo\main.cpp(14,25): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Projects\Logo\Logo\Logo\main.cpp(31,25): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=int
           ]
-C:\Projects\Logo\Logo\Logo\main.cpp(25,34): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Projects\Logo\Logo\Logo\main.cpp(45,34): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=int
           ]
-C:\Projects\Logo\Logo\Logo\main.cpp(25,27): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Projects\Logo\Logo\Logo\main.cpp(45,27): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=int
           ]
-C:\Projects\Logo\Logo\Logo\main.cpp(77,38): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Projects\Logo\Logo\Logo\main.cpp(97,38): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=int
           ]
-C:\Projects\Logo\Logo\Logo\main.cpp(77,31): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Projects\Logo\Logo\Logo\main.cpp(97,31): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=int
           ]
+  token.cpp
+  tokentype.h
+  Generating Code...
   Logo.vcxproj -> C:\Projects\Logo\Logo\x64\Debug\Logo.exe
